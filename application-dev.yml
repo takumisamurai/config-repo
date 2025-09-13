@@ -1,1 +1,16 @@
-
+spring:
+  datasource:
+    url: jdbc:mysql://dev-db-server:3306/userdb_dev
+    username: devuser
+    password: devpass
+  jpa:
+    hibernate:
+      ddl-auto: update
+  logging:
+    level:
+      root: DEBUG
+feature:
+  enable-logging: true
+  enable-debug-toolbar: true
+server:
+  port: 8081

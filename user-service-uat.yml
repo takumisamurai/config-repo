@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://uat-db-server:3306/userdb_uat
+    username: uatuser
+    password: uatpass
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  logging:
+    level:
+      root: INFO
+feature:
+  enable-logging: true
+  enable-debug-toolbar: false
+server:
+  port: 8082

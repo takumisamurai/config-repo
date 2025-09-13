@@ -1,0 +1,12 @@
+# Common configurations shared by all microservices
+spring:
+  datasource:
+    url: jdbc:mysql://common-db-server:3306/ridedb
+    username: commonuser
+    password: commonpass
+  rabbitmq:
+    host: common-rabbitmq-server
+    port: 5672
+  redis:
+    host: common-redis-host
+    port: 6379

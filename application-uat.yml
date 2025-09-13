@@ -1,1 +1,18 @@
+# Prod configurations shared by all microservices
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//<host>:1521/<service-name>
+    username: uat-username
+    password: uat-password
+    driver-class-name: oracle.jdbc.OracleDriver
+  rabbitmq:
+    host: uat-rabbitmq-server
+    port: 5888
+  redis:
+    host: uat-redis-host
+    port: 6888
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    hibernate:
+      ddl-auto: update  # or validate for uat/prod
 

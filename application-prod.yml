@@ -1,7 +1,7 @@
 # Prod configurations shared by all microservices
 spring:
   datasource:
-    url: jdbc:oracle:thin:@//<host>:1521/<service-name>
+    url: jdbc:oracle:thin:@//<host>:1521/prod-db
     username: prod-username
     password: prod-password
     driver-class-name: oracle.jdbc.OracleDriver

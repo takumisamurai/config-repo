@@ -1,7 +1,7 @@
 # Prod configurations shared by all microservices
 spring:
   datasource:
-    url: jdbc:oracle:thin:@//<host>:1521/<service-name>
+    url: jdbc:oracle:thin:@//<host>:1521/uat_db
     username: uat-username
     password: uat-password
     driver-class-name: oracle.jdbc.OracleDriver

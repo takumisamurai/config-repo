@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://dev-db-server:3306/userdb_dev
+    url: jdbc:mysql://dev-db-server:3306/dev_db
     username: devuser
     password: devpass
   jpa:
